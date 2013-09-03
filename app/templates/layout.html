@@ -8,7 +8,7 @@
 <!-- Basic Page Needs
  ================================================== -->
 <meta charset="utf-8">
-<title>Incredible</title>
+<title>Wiley & Warrick</title>
 
 <!-- Mobile Specific
  ================================================== -->
@@ -44,7 +44,7 @@
 	
 		<!-- Logo -->
 		<div class="four columns">
-			<a href="#"><img src="./static/images/logo.png" alt=""/></a>
+			<a href="{{url_for('index')}}"><img src="./static/images/wwlogo3.jpg" alt="" style="width: 40%; height: 40%"/> </a>
 		</div>
 		
 		<!-- Main Navigation Start -->
@@ -52,42 +52,22 @@
 			<div id="navigation">
 				<ul id="nav">
 				
-					<li><a id="current" href="{{url_for('index')}}">Home</a>
-						<ul>
-							<li><a href="{{url_for('index')}}">Home 1</a></li>
-							<li><a href="{{url_for('index_2')}}">Home 2</a></li>
-							<li><a href="{{url_for('index_3')}}">Home 3</a></li>
-							<li><a href="{{url_for('index_4')}}">Home 4</a></li>
-						</ul>
+					<li><a id="current" href="{{url_for('about')}}">About</a>
 					</li>
 					
-					<li><a href="#">Features</a>
+					<li><a href="{{url_for('services')}}">Services</a>
 						<ul>
-							<li><a href="{{url_for('shortcodes')}}">Shortcodes</a></li>
-							<li><a href="{{url_for('about')}}">About Us</a></li>
-							<li><a href="{{url_for('services')}}">Services</a></li>
-							<li><a href="{{url_for('pricing_tables')}}">Pricing Tables</a></li>
-							<li><a href="{{url_for('full_width')}}">Full Width</a></li>
-							<li><a href="#">Layouts</a>
-								<ul>
-									<li><a href="{{url_for('sidebar_right')}}">Page - Sidebar Right</a></li>
-									<li><a href="{{url_for('sidebar_left')}}">Page - Sidebar Left</a></li>
-									<li><a href="{{url_for('blog_post')}}">Single Post</a></li>
-									<li><a href="{{url_for('single_project')}}">Single Project</a></li>
-								</ul>
-							</li>
+							<li><a href="{{url_for('services')}}">Software</a></li>
+							<li><a href="{{url_for('services')}}">Business</a></li>
+							<li><a href="{{url_for('services')}}">Coaching</a></li>
+						</ul>
+					</li>					
+					<li><a href="{{url_for('portfolio_2')}}">Portfolio</a>
+						<ul>
+							<li><a href="http://github/nyghtowl">Github</a></li>
 						</ul>
 					</li>
-					
-					<li><a href="#">Portfolio</a>
-						<ul>
-							<li><a href="{{url_for('portfolio_2')}}">2 Columns</a></li>
-							<li><a href="{{url_for('portfolio_3')}}">3 Columns</a></li>
-							<li><a href="{{url_for('portfolio_4')}}">4 Columns</a></li>
-							<li><a href="{{url_for('single_project')}}">Single Project</a></li>
-						</ul>
-					</li>
-					<li><a href="{{url_for('blog')}}">Blog</a></li>
+					<li><a href="http://nyghtowl.io">Blog</a></li>
 					<li><a href="{{url_for('contact')}}">Contact</a></li>
 				</ul>
 			</div>
@@ -123,9 +103,20 @@
 				<li><a href="#">Services</a></li>
 				<li><a href="#">Terms of Use</a></li>
 				<li><a href="#">Privacy Policy</a></li>
-				<li><a href="{{url_for('contact')}}">Contact Us</a></li>
 			</ul>
 		</div>
+
+		<!-- Contact -->
+		<div class="four columns">
+			<h5 id="contact_info">Contact Us</h5>
+			<ul class="contact-details">
+				<li><i class="icon-map-marker"></i><p>Location: San Francisco, CA, USA</p></li>
+				<li><i class="icon-user"></i> <p>Phone: (415) 547-0727</p></li>
+				<li><i class="icon-envelope"></i><p>Email: <a href="#">contact@wileywarrick.com</a></p></li>
+				<li><i class="icon-globe"></i> <p>Web: <a href="http://www.wileywarrick.com">www.wileywarrick.com</a></p></li>
+			</ul>
+		</div>
+
 		
 		<!-- Latest From Blog -->
 <!-- 		<div class="four columns">
@@ -187,7 +178,7 @@
 				<li class="vimeo"><a href="#">Vimeo</a></li>
 				<li class="youtube"><a href="#">YouTube</a></li>
 				<li class="skype"><a href="#">Skype</a></li> -->
-				<li class="twitter"><a href="#">Twitter</a></li>
+<!-- 				<li class="twitter"><a href="#">Twitter</a></li> -->
 			</ul>
 		</div>
 
