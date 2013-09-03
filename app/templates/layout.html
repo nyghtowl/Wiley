@@ -52,28 +52,28 @@
 			<div id="navigation">
 				<ul id="nav">
 				
-					<li><a id="current" href="index.html">Home</a>
+					<li><a id="current" href="{{url_for('index')}}">Home</a>
 						<ul>
-							<li><a href="index.html">Home 1</a></li>
-							<li><a href="index_2.html">Home 2</a></li>
-							<li><a href="index_3.html">Home 3</a></li>
-							<li><a href="index_4.html">Home 4</a></li>
+							<li><a href="{{url_for('index')}}">Home 1</a></li>
+							<li><a href="{{url_for('index_2')}}">Home 2</a></li>
+							<li><a href="{{url_for('index_3')}}">Home 3</a></li>
+							<li><a href="{{url_for('index_4')}}">Home 4</a></li>
 						</ul>
 					</li>
 					
 					<li><a href="#">Features</a>
 						<ul>
-							<li><a href="shortcodes.html">Shortcodes</a></li>
-							<li><a "href={{url_for('about')}}">About Us</a></li>
-							<li><a href="services.html">Services</a></li>
-							<li><a href="pricing_tables.html">Pricing Tables</a></li>
-							<li><a href="full_width.html">Full Width</a></li>
+							<li><a href="{{url_for('shortcodes')}}">Shortcodes</a></li>
+							<li><a href="{{url_for('about')}}">About Us</a></li>
+							<li><a href="{{url_for('services')}}">Services</a></li>
+							<li><a href="{{url_for('pricing_tables')}}">Pricing Tables</a></li>
+							<li><a href="{{url_for('full_width')}}">Full Width</a></li>
 							<li><a href="#">Layouts</a>
 								<ul>
-									<li><a href="sidebar_right.html">Page - Sidebar Right</a></li>
-									<li><a href="sidebar_left.html">Page - Sidebar Left</a></li>
-									<li><a href="blog_post.html">Single Post</a></li>
-									<li><a href="single_project.html">Single Project</a></li>
+									<li><a href="{{url_for('sidebar_right')}}">Page - Sidebar Right</a></li>
+									<li><a href="{{url_for('sidebar_left')}}">Page - Sidebar Left</a></li>
+									<li><a href="{{url_for('blog_post')}}">Single Post</a></li>
+									<li><a href="{{url_for('single_project')}}">Single Project</a></li>
 								</ul>
 							</li>
 						</ul>
@@ -81,14 +81,14 @@
 					
 					<li><a href="#">Portfolio</a>
 						<ul>
-							<li><a href="portfolio_2.html">2 Columns</a></li>
-							<li><a href="portfolio_3.html">3 Columns</a></li>
-							<li><a href="portfolio_4.html">4 Columns</a></li>
-							<li><a href="single_project.html">Single Project</a></li>
+							<li><a href="{{url_for('portfolio_2')}}">2 Columns</a></li>
+							<li><a href="{{url_for('portfolio_3')}}">3 Columns</a></li>
+							<li><a href="{{url_for('portfolio_4')}}">4 Columns</a></li>
+							<li><a href="{{url_for('single_project')}}">Single Project</a></li>
 						</ul>
 					</li>
-					<li><a href="blog.html">Blog</a></li>
-					<li><a href="contact.html">Contact</a></li>
+					<li><a href="{{url_for('blog')}}">Blog</a></li>
+					<li><a href="{{url_for('contact')}}">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -120,18 +120,15 @@
 		<div class="four columns">
 			<h5>Useful Links</h5>
 			<ul class="links-list">
-				<li><a href="#">Frequently Asked Questions</a></li>
-				<li><a href="#">Service Updates</a></li>
-				<li><a href="#">Community Forum</a></li>
-				<li><a href="#">Help Desk</a></li>
+				<li><a href="#">Services</a></li>
 				<li><a href="#">Terms of Use</a></li>
-				<li><a href="#">Validate License</a></li>
 				<li><a href="#">Privacy Policy</a></li>
+				<li><a href="{{url_for('contact')}}">Contact Us</a></li>
 			</ul>
 		</div>
 		
 		<!-- Latest From Blog -->
-		<div class="four columns">
+<!-- 		<div class="four columns">
 			<h5>Latest From The Blog</h5>
 			
 			<div class="latest-post">
@@ -152,7 +149,7 @@
 				<span>22 June 2012</span>
 			</div>
 			
-		</div>
+		</div> -->
 		
 		<!-- Twitter -->
 		<div class="four columns">
@@ -185,12 +182,12 @@
 				
 		<div class="eight columns">
 			<ul class="social-links">
-				<li class="twitter"><a href="#">Twitter</a></li>
-				<li class="facebook"><a href="#">Facebook</a></li>
+<!-- 				<li class="facebook"><a href="#">Facebook</a></li>
 				<li class="digg"><a href="#">Digg</a></li>
 				<li class="vimeo"><a href="#">Vimeo</a></li>
 				<li class="youtube"><a href="#">YouTube</a></li>
-				<li class="skype"><a href="#">Skype</a></li>
+				<li class="skype"><a href="#">Skype</a></li> -->
+				<li class="twitter"><a href="#">Twitter</a></li>
 			</ul>
 		</div>
 

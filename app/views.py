@@ -46,13 +46,41 @@ def portfolio_4():
 def about():
     return render_template('about.html')
 
+@app.route('/blog')
+def blog():
+    return render_template('blog.html')
+
+@app.route('/blog_post')
+def blog_post():
+    return render_template('blog_post.html')
+
 @app.route('/contact')
 def contact():
     return render_template('contact.html')
 
+@app.route('/full_width')
+def full_width():
+    return render_template('full_width.html')
+
+@app.route('/pricing_tables')
+def pricing_tables():
+    return render_template('pricing_tables.html')
+
 @app.route('/services')
 def services():
     return render_template('services.html')
+
+@app.route('/shortcodes')
+def shortcodes():
+    return render_template('shortcodes.html')
+
+@app.route('/sidebar_left')
+def sidebar_left():
+    return render_template('sidebar_left.html')
+
+@app.route('/sidebar_right')
+def sidebar_right():
+    return render_template('sidebar_right.html')
 
 @app.route('/single_project')
 def single_project():
