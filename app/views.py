@@ -18,6 +18,24 @@ def internal_error(error):
 def index():
     return render_template('index.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
+
+@app.route('/services')
+def services():
+    return render_template('services.html')
+
+@app.route('/portfolio_3')
+def portfolio_3():
+    return render_template('portfolio_3.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
+
+
+
 @app.route('/index_2')
 def index_2():
     return render_template('index_2.html')
@@ -34,17 +52,10 @@ def index_4():
 def portfolio_2():
     return render_template('portfolio_2.html')
 
-@app.route('/portfolio_3')
-def portfolio_3():
-    return render_template('portfolio_3.html')
-
 @app.route('/portfolio_4')
 def portfolio_4():
     return render_template('portfolio_4.html')
 
-@app.route('/about')
-def about():
-    return render_template('about.html')
 
 @app.route('/blog')
 def blog():
@@ -54,10 +65,6 @@ def blog():
 def blog_post():
     return render_template('blog_post.html')
 
-@app.route('/contact')
-def contact():
-    return render_template('contact.html')
-
 @app.route('/full_width')
 def full_width():
     return render_template('full_width.html')
@@ -66,9 +73,6 @@ def full_width():
 def pricing_tables():
     return render_template('pricing_tables.html')
 
-@app.route('/services')
-def services():
-    return render_template('services.html')
 
 @app.route('/shortcodes')
 def shortcodes():
