@@ -1,0 +1,112 @@
+﻿{% extends "layout.html" %}
+
+{% block body %}
+
+<!--  Page Title -->
+<div id="page-title">
+
+	<!-- 960 Container Start -->
+	<div class="container">
+		<div class="sixteen columns">
+			<h2>Contact</h2>
+		</div>
+	</div>
+	<!-- 960 Container End -->
+	
+</div>
+<!-- Page Title End -->
+
+<!--  960 Container Start -->
+<div class="container">
+
+	<!-- Google Map -->
+	<div class="sixteen columns">
+		<h4 class="headline">See Our Location On Map</h4>
+		<div id="google-map" class="embed">
+			<iframe width="640" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=seattle&amp;aq=&amp;sll=22.447841,114.109497&amp;sspn=0.448038,0.550003&amp;vpsrc=0&amp;ie=UTF8&amp;hq=&amp;hnear=%E0%B8%8B%E0%B8%B5%E0%B9%81%E0%B8%AD%E0%B8%95%E0%B9%80%E0%B8%97%E0%B8%B4%E0%B8%A5+King,+%E0%B8%A3%E0%B8%B1%E0%B8%90%E0%B8%A7%E0%B8%AD%E0%B8%8A%E0%B8%B4%E0%B8%87%E0%B8%95%E0%B8%B1%E0%B8%99+%E0%B8%AA%E0%B8%AB%E0%B8%A3%E0%B8%B1%E0%B8%90%E0%B8%AD%E0%B9%80%E0%B8%A1%E0%B8%A3%E0%B8%B4%E0%B8%81%E0%B8%B2&amp;t=m&amp;z=12&amp;ll=47.60621,-122.332071&amp;output=embed"></iframe>
+		</div>
+	</div>
+	<!-- Google Map End -->
+
+	
+	<!-- Contact Form -->
+	<div class="eleven columns">
+		<h4 class="headline">Let's Keep in Touch</h4>
+		
+
+		<div class="success-message">
+			<div class="notification success closeable">
+				<p><span>Success!</span> Your message has been sent.</p>
+			</div>
+		</div>
+
+
+		<div id="contact-form">
+			<form method="post" action="contact.php">
+				
+				<div class="field">
+					<label>Name:</label>
+					<input type="text" name="name" class="text" />
+				</div>
+				
+				<div class="field">
+					<label>Email: <span>*</span></label>
+					<input type="text" name="email" class="text" />
+				</div>
+				
+				<div class="field">
+					<label>Message: <span>*</span></label>
+					<textarea name="message" class="text textarea" ></textarea>
+				</div>
+				
+				<div class="field">
+					<input type="button" id="send" value="Send Message"/>
+					<div class="loading"></div>
+				</div>
+				
+			</form>
+		</div>
+		
+
+</div>
+	
+	<!-- Contact Details -->
+	<div class="five columns">
+		<div class="widget">
+			<h5>Contact Details</h5>
+			
+			<ul class="contact-details" style="padding-top: 8px;">
+				<li><i class="icon-map-marker"></i> <p>30 Your Street Name<br/>Los Angeles, CA 94108, USA</p></li>
+				<li><i class="icon-user"></i> <p>Phone: (123) 456-7890</p></li>
+				<li><i class="icon-envelope"></i><p>Email: <a href="#">contact@incredible.com</a></p></li>
+				<li><i class="icon-globe"></i> <p>Web: <a href="#">www.indredible.com</a></p></li>
+				<li><i class="icon-time"></i><p>
+						Mon-Fri: 9:00 → 18:00 <br/>
+						Sat: 10:00 → 17:00 <br/>
+						Sunday: Closed
+				</p></li>
+			</ul>
+
+		</div>
+	</div>
+
+	<!-- Social Media -->
+	<div class="five columns">
+		<div class="widget">
+			<h5>Social Media</h5>
+			<p>
+			<div id="social" class="tooltips">
+				<a href="#" rel="tooltip" title="Facebook"><img src="images/social_icons/facebook.png" alt="Facebook" /></a>
+				<a href="#" rel="tooltip" title="Flickr"><img src="images/social_icons/flickr.png" alt="Flickr" /></a>
+				<a href="#" rel="tooltip" title="LinkedIn"><img src="images/social_icons/linkedin.png" alt="LinkedIn" /></a>
+				<a href="#" rel="tooltip" title="Google Plus"><img src="images/social_icons/googleplus.png" alt="Google Plus" /></a>
+				<a href="#" rel="tooltip" title="Contact"><img src="images/social_icons/mail.png" alt="Contact" /></a>
+			</div>
+			</p>
+		</div>
+	</div>
+
+</div>
+<!-- End 960 Container -->
+
+{% endblock %}
