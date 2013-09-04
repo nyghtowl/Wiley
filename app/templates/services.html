@@ -2,31 +2,11 @@
 
 {% block body %}
 
-<!--  Page Title -->
-<div id="page-title">
-
-	<!-- 960 Container Start -->
-	<div class="container">
-		<div class="sixteen columns">
-			<h2>Services</h2>
-		</div>
-	</div>
-	<!-- 960 Container End -->
-	
-</div>
-<!-- Page Title End -->
 
 <!-- 960 Container -->
 <div class="container">
 
 	<!-- Standard Structure -->
-
-	<div class="six columns">
-		<h4 class="headline">Methodology</h4>
-		<p>We are passionate about solving problems for clients and customers. Whatever the problem is, we want to provide solutions through services and products that will help our customers make better decisions.</p>
-		<p>Wiley & Warrick provides solutions through client collaboration and making sure we are communicating regularly and effectively on what we are doing and why.</p>
-		<p>Our vision includes improving the software engineering industry through community involvement and supporting efforts to counteract the expanding gap in software engineering resources availabe vs. those needed.</p>
-	</div>
 
 	<div class="ten columns">
 		<h4 class="headline">Services</h4>
@@ -51,8 +31,8 @@
 		<p>Providing strategic and operational guidance for business intelligence and communication needs. We can conduct operational and problem due dillegence to provide a recommended strategy. We can also provide project management support systems and operation implementation.</p>
 		<ul class="check_list">
 			<li>Business Intelligence Strategy</li>
-			<li>Communication Strategy Design</li>
-			<li>Requirements Gathering</li>
+			<li>Change & Communication Strategy Design</li>
+			<li>Due Dilligence & Requirements Gathering</li>
 			<li>Project Management & Facilitiation</li>
 		</ul>
 
@@ -70,7 +50,10 @@
 	</div>
 
 
-	
+
+	<div class="six columns">
+
+	</div>
 
 	<!-- Standard Structure End -->
 	
@@ -79,17 +62,8 @@
 		{% include 'service_summary_partial.html' %}
 	</div>
 
-	<!--Info Box Start -->
-	<div class="sixteen columns">
-		<div class="info-box">
-			<div class="info-content">
-				<h4>Perfect Premium Template for Showing Your Products</h4>
-				<p>Incredible is a responsive HTML template created for corporate and portfolio websites. </p>
-			</div>
-			<a href="#" class="button medium yellow" style="float: right;">Contact Us for More Info</a>
-			<div class="clearfix"></div>
-		</div>
-	</div>
+	{% include 'call_action_partial.html' %}
+
 	<!-- Recent Work End -->
 	
 

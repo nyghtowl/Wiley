@@ -2,19 +2,6 @@
 
 {% block body %}
 
-<!--  Page Title -->
-<div id="page-title">
-
-	<!-- 960 Container Start -->
-	<div class="container">
-		<div class="sixteen columns">
-			<h2>Portfolio <span>/ 3 Columns</span></h2>
-		</div>
-	</div>
-	<!-- 960 Container End -->
-	
-</div>
-<!-- Page Title End -->
 
 
 	<!-- 960 Container -->
@@ -26,10 +13,9 @@
 			<div id="filters">
 				<ul class="option-set" data-option-key="filter">
 					<li><a href="#filter" class="selected" data-option-value="*">All</a></li>
-					<li><a href="#filter" data-option-value=".interior-design">Interior Design</a></li>
-					<li><a href="#filter" data-option-value=".architecture">Architecture</a></li>
-					<li><a href="#filter" data-option-value=".scenery">Scenery</a></li>
-					<li><a href="#filter" data-option-value=".real-estate">Real Estate</a></li>
+					<li><a href="#filter" data-option-value=".software-projects">Software</a></li>
+					<li><a href="#filter" data-option-value=".business-projects">Business</a></li>
+					<li><a href="#filter" data-option-value=".coaching-projects">Coaching</a></li>
 				</ul>
 			</div>
 	
@@ -43,87 +29,91 @@
 	<div class="container">
 		<!-- Portfolio Content -->
 		<div id="portfolio-wrapper">
+
+			<!-- 1/3 Column -->
+			<div class="one-third column portfolio-item software-projects">
+					<div class="item-img"><a href="single_project.html"><img src="./static/images/portfolio_images/portfolio_3_07.jpg" alt=""/><div class="overlay zoom"></div></a></div>
+					<div class="portfolio-item-meta">
+						<h5><a href="single_project.html">Allergy Project</a></h5>
+						<p>Collaborative project to build a web application that captures an individual's allergy profile and provides an easy search tool on products to give a yes or no on whether that product is good for the person. Effort used as a teaching tool.</p>
+					</div>
+			</div>
 			
 			<!-- 1/3 Column -->
-			<div class="one-third column portfolio-item interior-design architecture real-estate">
-					<div class="item-img"><a href="./static/images/portfolio_images/portfolio_3_01_large.jpg" rel="imagebox" title="SockMonkee"><img src="./static/images/portfolio_images/portfolio_3_01.jpg" alt=""/><div class="overlay zoom"></div></a></div>
+			<div class="one-third column portfolio-item software-projects">
+					<div class="item-img"><a href="http://http://www.sunfinder.io"><img src="./static/images/portfolio_images/portfolio_3_08.jpg" alt=""/><div class="overlay zoom"></div></a></div>
 					<div class="portfolio-item-meta">
-						<h5><a href="single_project.html">SockMonkee</a></h5>
+						<h5><a href="http:http://www.sunfinder.io">Sun Finder</a></h5>
+						<p>Micro-climate easy search solution. Inspired by San Francisco weather. Full stack web application that uses RESTful APIs, Postgres, SQLAlchemy, Python, Flask, Javascript, & JQuery.</p>
+					</div>
+			</div>
+			
+
+			<!-- 1/3 Column -->
+			<div class="one-third column portfolio-item software-projects">
+					<div class="item-img"><a href="http://python-trek-2013.herokuapp.com/"><img src="./static/images/portfolio_images/portfolio_3_05.jpg" alt=""/><div class="overlay zoom"></div></a></div>
+					<div class="portfolio-item-meta">
+						<h5><a href="http://python-trek-2013.herokuapp.com/">Python Trek</a></h5>
+						<p>Markov chain generator built with Ruby on Rails and mashing up Star Trek and Monty Python quotes that are then posted on Twitter <a href="http://twitter.com/pythontrek">(@pythontrek).</a></p>
+					</div>
+			</div>
+
+			<!-- 1/3 Column -->
+			<div class="one-third column portfolio-item business-projects">
+					<div class="item-img"><img src="./static/images/portfolio_images/portfolio_3_09.jpg" alt=""/><div class="overlay zoom"></div></div>
+					<div class="portfolio-item-meta">
+						<h5>Business Intelligence</h5>
+						<p>Nulla scelerisque massa vitae lorem consequat lobortis. Nulla condimentum interdum aliquam. Fusce vulputate pretium urna sit amet consequat. </p>
+					</div>
+			</div>
+
+			<!-- 1/3 Column -->
+			<div class="one-third column portfolio-item business-projects">
+					<div class="item-img"><img src="./static/images/portfolio_images/portfolio_3_01.jpg" alt=""/><div class="overlay zoom"></div></div>
+					<div class="portfolio-item-meta">
+						<h5>Project Management</h5>
 						<p>Sed in velit a justo imperdiet scelerisque ut id leo. Cras quis tellus tellus, viverra varius est. Nulla sed cursus lorem lipsum dolor augue.</p>
 					</div>
 			</div>
 
 			<!-- 1/3 Column -->
-			<div class="one-third column portfolio-item scenery">
-					<div class="item-img"><a href="single_project.html"><img src="./static/images/portfolio_images/portfolio_3_02.jpg" alt=""/><div class="overlay zoom"></div></a></div>
+			<div class="one-third column portfolio-item business-projects">
+					<div class="item-img"><img src="./static/images/portfolio_images/portfolio_3_03.jpg" alt=""/><div class="overlay zoom"></div></div>
 					<div class="portfolio-item-meta">
-						<h5><a href="single_project.html">Death Shred</a></h5>
-						<p>Aenean aliquet pulvinar dui, nec tempus lectus posuere quis. Proin dignissim ligula non nibh ornare tempus dui justo auctor lacus, ac sed justo. </p>
+						<h5>Change & Communication Strategy</h5>
+						<p>Plans that map out the key audience, messages and timing of activities and communications to effect the best impact. </p>
+					</div>
+			</div>
+
+			<!-- 1/3 Column -->
+			<div class="one-third column portfolio-item coaching-projects">
+					<div class="item-img"><img src="./static/images/portfolio_images/portfolio_3_02.jpg" alt=""/><div class="overlay zoom"></div></div>
+					<div class="portfolio-item-meta">
+						<h5>Start-up Operations</a></h5>
+						<p>Guidance on what to consider, how to organize and approach starting a business.</p>
 					</div>
 			</div>
 			
+			
 			<!-- 1/3 Column -->
-			<div class="one-third column portfolio-item architecture scenery">
-					<div class="item-img"><a href="single_project.html"><img src="./static/images/portfolio_images/portfolio_3_03.jpg" alt=""/><div class="overlay zoom"></div></a></div>
+			<div class="one-third column portfolio-item coaching-projects">
+					<div class="item-img"><a href="http://nyghtowl.io/2013/06/20/what-to-do-when-you-are-hacked/"><img src="./static/images/portfolio_images/portfolio_3_04.jpg" alt=""/><div class="overlay zoom"></div></a></div>
 					<div class="portfolio-item-meta">
-						<h5><a href="single_project.html">Monster Calendar</a></h5>
-						<p>Aenean aliquet pulvinar dui, nec tempus lectus posuere quis. Proin dignissim ligula non nibh ornare tempu sfusce dui lacus, ac egestas ipsum ligula.</p>
+						<h5><a href="http://nyghtowl.io/2013/06/20/what-to-do-when-you-are-hacked/">Personal Internet Security</a></h5>
+						<p>Support and guidance on how to adjust your computer and router settings to improve secure browsing.</p>
+					</div>
+			</div>
+						
+			<!-- 1/3 Column -->
+			<div class="one-third column portfolio-item coaching-projects">
+					<div class="item-img"><a href="http://github.com/nyghtowl/Interview_Problems"><img src="./static/images/portfolio_images/portfolio_3_06.jpg" alt=""/><div class="overlay zoom"></div></a></div>
+					<div class="portfolio-item-meta">
+						<h5><a href="http://github.com/nyghtowl/Interview_Problems">Interview Problems</a></h5>
+						<p>Open-source repository consolidating common interview problems and sample solutions in Python, Ruby & Javascript. At least 15 contributors direct and indirect.</p>
 					</div>
 			</div>
 			
-			<!-- 1/3 Column -->
-			<div class="one-third column portfolio-item scenery">
-					<div class="item-img"><a href="single_project.html"><img src="./static/images/portfolio_images/portfolio_3_04.jpg" alt=""/><div class="overlay zoom"></div></a></div>
-					<div class="portfolio-item-meta">
-						<h5><a href="single_project.html">Package Project</a></h5>
-						<p>Phasellus leo ante, posuere in fringilla vitae, pretium at dui. Fusce et neque quis odio gravida auctor vel non mauris. Vivamus gravida aliquet eros.</p>
-					</div>
-			</div>
-			
-			<!-- 1/3 Column -->
-			<div class="one-third column portfolio-item interior-design architecture real-estate">
-					<div class="item-img"><a href="single_project.html"><img src="./static/images/portfolio_images/portfolio_3_05.jpg" alt=""/><div class="overlay zoom"></div></a></div>
-					<div class="portfolio-item-meta">
-						<h5><a href="single_project.html">Prime Art League</a></h5>
-						<p>Vivamus sit amet ante in felis lobortis vestibulum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.</p>
-					</div>
-			</div>
-			
-			<!-- 1/3 Column -->
-			<div class="one-third column portfolio-item scenery">
-					<div class="item-img"><a href="single_project.html"><img src="./static/images/portfolio_images/portfolio_3_06.jpg" alt=""/><div class="overlay zoom"></div></a></div>
-					<div class="portfolio-item-meta">
-						<h5><a href="single_project.html">Franky Fisticuffs</a></h5>
-						<p>Aenean aliquet pulvinar dui, nec tempus lectus posuere quis. Proin dignissim ligula non nibh ornare tempus. Fusce iaculis diam mattis vestibulum.</p>
-					</div>
-			</div>
-			
-			<!-- 1/3 Column -->
-			<div class="one-third column portfolio-item interior-design architecture scenery">
-					<div class="item-img"><a href="single_project.html"><img src="./static/images/portfolio_images/portfolio_3_07.jpg" alt=""/><div class="overlay zoom"></div></a></div>
-					<div class="portfolio-item-meta">
-						<h5><a href="single_project.html">Spaghetti Western</a></h5>
-						<p>Donec convallis, elit eget semper fringilla, orci augue posuere nunc, sit amet varius arcu nisl vel sem. Etiam ut metus justo, a dictum massa</p>
-					</div>
-			</div>
-			
-			<!-- 1/3 Column -->
-			<div class="one-third column portfolio-item interior-design architecture">
-					<div class="item-img"><a href="single_project.html"><img src="./static/images/portfolio_images/portfolio_3_08.jpg" alt=""/><div class="overlay zoom"></div></a></div>
-					<div class="portfolio-item-meta">
-						<h5><a href="single_project.html">Magazine Illustrations</a></h5>
-						<p>Donec a congue dui. In hendrerit, libero at feugiat tristique, dui justo auctor lacus, ac egestas ipsum ligula lorem lipsum dolor sit sed justo.</p>
-					</div>
-			</div>
-			
-			<!-- 1/3 Column -->
-			<div class="one-third column portfolio-item interior-design architecture real-estate">
-					<div class="item-img"><a href="single_project.html"><img src="./static/images/portfolio_images/portfolio_3_09.jpg" alt=""/><div class="overlay zoom"></div></a></div>
-					<div class="portfolio-item-meta">
-						<h5><a href="single_project.html">Bloomberg Businessweek</a></h5>
-						<p>Nulla scelerisque massa vitae lorem consequat lobortis. Nulla condimentum interdum aliquam. Fusce vulputate pretium urna sit amet consequat. </p>
-					</div>
-			</div>
+
 			
 		</div>
 		<!-- End Portfolio Content -->
