@@ -15,9 +15,9 @@
 					<div class="sixteen columns">
 						<img src="./static/images/slider_img_02.png" alt="" style="float: right;" />
 						<div class="slider_description">
-							<h2>Wiley &amp; Warrick</h2>
-							<p>Phasellus - ut augue at sapien bibendum bibendum amet magna. Aenean condimentum, lacus sit amet luctus lobortis, enim tellus ultrices elit, amet consequat enim elit noneas.</p>
-							<a href="shortcodes.html" class="button medium yellow">Read More</a>
+							<h2>Web Application</h2>
+							<p>Seeking a quick turnaround on a web applicaiton prototype to help demo your project vision. Checkout services.</p>
+							<a href="{{ url_for('portfolio_3')}}" class="button medium yellow">View Projects</a>
 						</div>
 					</div>
 				</div>
@@ -29,9 +29,9 @@
 					<div class="sixteen columns">
 						<img src="./static/images/slider_img_01.png" alt="" style="float: right;" />
 						<div class="slider_description">
-							<h2>Unique Theme for Business, <b><br/></b> Agency or Creative Portfolios</h2>
-							<p>Curabitur bibendum ultricies nisi id vestibulum. Duis ac lacus enim, et rutrum libero. In fringilla aliquet leo faucibus lobortis. Sed leo id quam ornare venenatis non a urna. </p>
-							<a href="#" class="button medium yellow">Purchase Now</a>
+							<h2>Internet Security Guidance</h2>
+							<p>Lost in the midst of all the terminology and knowing best practices to stay safe on the web. Contact us for support.</p>
+							<a href="{{ url_for('portfolio_3')}}" class="button medium yellow">Read More</a>
 						</div>
 					</div>
 				</div>
@@ -43,9 +43,9 @@
 					<div class="sixteen columns">
 						<img src="./static/images/slider_img_03.png" alt="" style="float: right;" />
 						<div class="slider_description">
-							<h2>Incredible: Responsive Theme <b><br/></b> Perfect for Showing Your Products</h2>
-							<p>Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque dolor.</p>
-							<a href="single_project.html" class="button medium yellow">View Project</a>
+							<h2>Business Intelligence<b><br/></b> Dashboard Development</h2>
+							<p>Need an easy, online report to pull and summarize multi-data sources, ask for more information.</p>
+							<a href="{{ url_for('contact')}}" class="button medium yellow">Contact Us</a>
 						</div>
 					</div>
 				</div>
@@ -74,46 +74,12 @@
 		<h4 class="headline">Recent Work</h4>
 	</div>
 	
-		<!-- 1/4 Column -->
-		<div class="four columns">
-				<div class="item-img"><a href="./static/images/portfolio_images/portfolio_3_01_large.jpg" rel="imagebox" title="SockMonkee"><img src="./static/images/portfolio_images/portfolio_3_01.jpg" alt=""/><div class="overlay zoom"></div></a></div>
-				<div class="portfolio-item-meta">
-					<h5><a href="single_project.html">SockMonkee</a></h5>
-					<p>Aenean sit amet ligula est, conseact etur lectus. Maecenas hendrerit, lorem.</p>
-				</div>
-		</div>
-	
-		<!-- 1/4 Column -->
-		<div class="four columns">
-				<div class="item-img"><a href="single_project.html"><img src="./static/images/portfolio_images/portfolio_3_06.jpg" alt=""/><div class="overlay zoom"></div></a></div>
-				<div class="portfolio-item-meta">
-					<h5><a href="single_project.html">Franky Fisticuffs</a></h5>
-					<p>Aenean sit amet ligula est, conseact etur lectus. Maecenas hendrerit, lorem.</p>
-				</div>
-		</div>
-
-		<!-- 1/4 Column -->
-		<div class="four columns">
-				<div class="item-img"><a href="single_project.html"><img src="./static/images/portfolio_images/portfolio_3_04.jpg" alt=""/><div class="overlay zoom"></div></a></div>
-				<div class="portfolio-item-meta">
-					<h5><a href="single_project.html">Package Project</a></h5>
-					<p>Gravida sit amet ligula eget conseact etur lectu aecenas hendrerit bibenea.</p>
-				</div>
-		</div>
-			
-		<!-- 1/4 Column -->
-		<div class="four columns">
-			<div class="item-img"><a href="./static/images/portfolio_img_04_large.jpg" rel="imagebox" title="Ampertastic Mr. Fox"><img src="./static/images/portfolio_img_04.jpg" alt=""/><div class="overlay zoom"></div></a></div>
-			<div class="portfolio-item-meta">
-				<h5><a href="single_project.html">Ampertastic Mr. Fox</a></h5>
-				<p>Fermentum sit amet ligula estabe, eget conseact lectus maecenas hendrerit.</p>
-			</div>
-		</div>
+	{% include 'recent_project_partial.html' %}
 	
 	<div class="clearfix"></div>
 	
 	{% include 'call_action_partial.html' %}
-	
+
 	<!-- Recent Work End -->
 
 
