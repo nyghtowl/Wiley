@@ -97,7 +97,7 @@ html[xmlns] .slides {display: block;}
 	transition: all 0.2s ease-in-out;
 }
 
-.flex-direction-nav a:hover {background-color: #2da0ce;}
+.flex-direction-nav a:hover {background-color: #5B8D5F;}
 
 .flex-direction-nav .flex-next {
 	right: 0px;
@@ -150,7 +150,7 @@ html[xmlns] .slides {display: block;}
 
 .post .flex-direction-nav .flex-next, .project .flex-direction-nav .flex-next {right: 0;}
 .post .flex-direction-nav .flex-prev, .project .flex-direction-nav .flex-prev {left: 0;}
-.post .flex-direction-nav a:hover, .project .flex-direction-nav a:hover {background-color: #2da0ce;}
+.post .flex-direction-nav a:hover, .project .flex-direction-nav a:hover {background-color: #5B8D5F;}
 
 
 /* Control Navigation

@@ -252,6 +252,8 @@ h5.headline {
 
 .feature-circle.blue {background: #2da0ce;}
 .feature-circle.gray {background: #555;}
+.feature-circle.green {background: #5B8D5F;}
+.feature-circle.light_green {background: #8FC093;}
 
 
 /* =============================================================== */
@@ -349,8 +351,8 @@ h5.headline {
 	background: #aaa;
 }
 
-.selected {background: #2da0ce; color: #fff !important;}
-.selected:hover {background: #2da0ce!important;}
+.selected {background: #5B8D5F; color: #fff !important;}
+.selected:hover {background: #5B8D5F!important;}
 
 
 /**** Isotope Filtering ****/
@@ -631,7 +633,7 @@ ol li ol.childlist .comment-des {
 	float: right;
 }
 
-.prev:hover, .next:hover {background-color: #2da0ce;}
+.prev:hover, .next:hover {background-color: #5B8D5F;}
 
 .prev.off, .next.off {
 	background-color: #ccc;
@@ -957,7 +959,7 @@ a.feed span {
     transition: all 0.2s ease-in-out;
 }
 	
-.mr-rotato-prev:hover, .mr-rotato-next:hover {background-color:#2da0ce;}
+.mr-rotato-prev:hover, .mr-rotato-next:hover {background-color:#5B8D5F;}
 
 
 /* =============================================================== */
