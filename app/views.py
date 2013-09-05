@@ -26,9 +26,9 @@ def about():
 def services():
     return render_template('services.html')
 
-@app.route('/portfolio_3')
-def portfolio_3():
-    return render_template('portfolio_3.html')
+@app.route('/portfolio')
+def portfolio():
+    return render_template('portfolio.html')
 
 @app.route('/contact')
 def contact():
