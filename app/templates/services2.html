@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+
+<!-- 960 Container -->
+<div class="container">
+
+	<!-- Standard Structure -->
+
+	<div class="ten columns">
+		<h4 class="headline">Services</h4>
+		
+		<!-- Tabs Navigation -->
+		<ul class="tabs-nav">
+			<li class="active"><a href="#tab1" id="service_software"><i class="icon-cog"></i> Software</a></li>
+			<li><a href="#tab2" id="service_business"><i class="icon-map-marker"></i>Business</a></li>
+			<li><a href="#tab3" id="service_coaching"><i class="icon-user"></i>Coaching</a></li>
+		</ul>
+
+		<!-- Tabs Content -->
+		<div class="tabs-container">
+			<div class="tab-content" id="tab1">
+			<p>Providing services and products for web application and data analytics tools. We can help you add functionality or a feature to your existing application or prototype a new concept.</p>
+			<ul class="check_list">
+				<li>Web Application Development</li>
+				<li>Ruby on Rails</li>
+				<li>Python & Django</li>
+				<li>JavaScript & JQuery</li>
+				<li>SQL & Postgres</li>
+				<li>Dashboards</li>
+				<li>Agile Development Approach</li>
+				<li>Flexible, Responsive Layout</li>
+				<li>Version Control & Git</li>
+				<li>Staff Augmentation</li>
+			</ul>
+			</div>
+		</div>
+			
+		<!-- Tabs Content -->
+		<div class="tabs-container">
+			<div class="tab-content" id="tab1">
+			<p>Providing strategic and operational guidance for business intelligence and communication needs. We can conduct operational and problem due dillegence to provide a recommended strategy. We can also provide project management support systems and operation implementation.</p>
+			<ul class="check_list">
+				<li>Business Intelligence Strategy</li>
+				<li>Change & Communication Strategy Design</li>
+				<li>Due Dilligence & Requirements Gathering</li>
+				<li>Project Management & Facilitiation</li>
+			</ul>
+			</div>
+		</div>
+
+		<!-- Tabs Content -->
+		<div class="tabs-container">
+			<div class="tab-content" id="tab1">
+			<p>Providing coaching for project leadership, start-up setup and personal internet security and skills and practices.</p>
+			<ul class="check_list">
+				<li>Project & Product Management Skills</li>
+				<li>Start-up Operational Setup</li>
+				<li>Personal Internet Security Practices</li>
+			</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="six columns">
+		{% include 'testimonials_partial.html' %}
+	</div>
+
+	<div class="sixteen columns">
+		{% include 'call_action_partial.html' %}
+	</div>
+	<!-- Recent Work End -->
+	
+
+	
+</div>
+<!-- 960 Container End -->
+
+
+</div>
+<!-- End 960 Container -->
+
+{% endblock %}

@@ -35,7 +35,10 @@ def contact():
     return render_template('contact.html')
 
 
-
+# Support Docs & Test
+@app.route('/services2')
+def services2():
+    return render_template('services2.html')
 
 @app.route('/blog')
 def blog():
