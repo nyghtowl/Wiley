@@ -1,4 +1,4 @@
-{% extends "layout.html" %}
+﻿{% extends "layout.html" %}
 
 {% block body %}
 
@@ -11,16 +11,10 @@
 	<div class="ten columns">
 		<h4 class="headline">Services</h4>
 		
-		<!-- Tabs Navigation -->
-		<ul class="tabs-nav">
-			<li class="active"><a href="#tab1" id="service_software"><i class="icon-cog"></i> Software</a></li>
-			<li><a href="#tab2" id="service_business"><i class="icon-map-marker"></i>Business</a></li>
-			<li><a href="#tab3" id="service_coaching"><i class="icon-user"></i>Coaching</a></li>
-		</ul>
-
-		<!-- Tabs Content -->
-		<div class="tabs-container">
-			<div class="tab-content" id="tab1">
+		<!-- Accordion #1 -->
+		<span class="acc-trigger"><a href="#"><h5 id="service_software">Software</h5></a></span>
+		<div class="acc-container">
+			<div class="content">
 			<p>Providing services and products for web application and data analytics tools. We can help you add functionality or a feature to your existing application or prototype a new concept.</p>
 			<ul class="check_list">
 				<li>Web Application Development</li>
@@ -37,9 +31,10 @@
 			</div>
 		</div>
 			
-		<!-- Tabs Content -->
-		<div class="tabs-container">
-			<div class="tab-content" id="tab1">
+		<!-- Accordion #2 -->		
+		<span class="acc-trigger"><a href="#"><h5 id="service_business">Business</h5></a></span>
+		<div class="acc-container">
+			<div class="content">
 			<p>Providing strategic and operational guidance for business intelligence and communication needs. We can conduct operational and problem due dillegence to provide a recommended strategy. We can also provide project management support systems and operation implementation.</p>
 			<ul class="check_list">
 				<li>Business Intelligence Strategy</li>
@@ -50,9 +45,10 @@
 			</div>
 		</div>
 
-		<!-- Tabs Content -->
-		<div class="tabs-container">
-			<div class="tab-content" id="tab1">
+		<!-- Accordion #3 -->		
+		<span class="acc-trigger"><a href="#"><h5 id="service_coaching">Coaching</h5></a></span>
+		<div class="acc-container">
+			<div class="content">
 			<p>Providing coaching for project leadership, start-up setup and personal internet security and skills and practices.</p>
 			<ul class="check_list">
 				<li>Project & Product Management Skills</li>
