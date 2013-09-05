@@ -36,26 +36,6 @@ def contact():
 
 
 
-@app.route('/index_2')
-def index_2():
-    return render_template('index_2.html')
-
-@app.route('/index_3')
-def index_3():
-    return render_template('index_3.html')
-
-@app.route('/index_4')
-def index_4():
-    return render_template('index_4.html')
-
-@app.route('/portfolio_2')
-def portfolio_2():
-    return render_template('portfolio_2.html')
-
-@app.route('/portfolio_4')
-def portfolio_4():
-    return render_template('portfolio_4.html')
-
 
 @app.route('/blog')
 def blog():
@@ -64,14 +44,6 @@ def blog():
 @app.route('/blog_post')
 def blog_post():
     return render_template('blog_post.html')
-
-@app.route('/full_width')
-def full_width():
-    return render_template('full_width.html')
-
-@app.route('/pricing_tables')
-def pricing_tables():
-    return render_template('pricing_tables.html')
 
 
 @app.route('/shortcodes')
