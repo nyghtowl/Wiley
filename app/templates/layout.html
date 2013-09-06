@@ -60,7 +60,7 @@
 	
 		<!-- Logo -->
 		<div class="four columns">
-			<a href="{{url_for('index')}}"><img src="./static/images/wileywarricklogo.png" alt="" style="width: 40%; height: 40%"/> </a>
+			<a href="{{url_for('index')}}"><img src="/static/images/wileywarricklogo.png" alt="" style="width: 40%; height: 40%"/> </a>
 		</div>
 		
 		<!-- Main Navigation Start -->
@@ -81,10 +81,10 @@
 					<li><a href="{{url_for('portfolio')}}">Portfolio</a>
 						<ul>
 							<li><a href="{{url_for('portfolio')}}">Portfolio</a></li>
-							<li><a href="http://github.com/nyghtowl">Github</a></li>
+							<li><a href="http://github.com/nyghtowl" target="_blank">Github</a></li>
 						</ul>
 					</li>
-					<li><a href="http://nyghtowl.io">Blog</a></li>
+					<li><a href="http://nyghtowl.io" target="_blank">Blog</a></li>
 					<li><a href="{{url_for('contact')}}">Contact</a></li>
 				</ul>
 			</div>
@@ -130,6 +130,7 @@
 		<div class="four columns">
 			<h5>Useful Links</h5>
 			<ul class="links-list">
+				<li><a href="{{url_for('index')}}">Home</a></li>
 				<li><a href="{{url_for('services')}}">Services</a></li>
 				<li><a href="#">Terms of Use</a></li>
 				<li><a href="#">Privacy Policy</a></li>
