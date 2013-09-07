@@ -1,0 +1,22 @@
+/*Main CSS*/
+
+
+/*Header Font
+==================================================*/
+
+#navigation ul li a {
+/*	font-family: Helvetica;*/
+	font-size: 14px;
+}
+
+/* #Basic Styles
+================================================== */
+body {
+	font-size: 13px;
+}
+
+/*Testimonials
+==================================================*/
+.testimonials{
+	font-style: italic
+}
