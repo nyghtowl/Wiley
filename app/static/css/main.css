@@ -1,7 +1,12 @@
 /*Main CSS*/
 
+/* #Basic Styles
+================================================== */
+body {
+	font-size: 13px;
+}
 
-/*Header Font
+/*Header
 ==================================================*/
 
 #navigation ul li a {
@@ -9,14 +14,23 @@
 	font-size: 14px;
 }
 
-/* #Basic Styles
-================================================== */
-body {
-	font-size: 13px;
+#layout_logo{
+	width: 40% !important;
+	height: 40% !important;
 }
 
 /*Testimonials
 ==================================================*/
 .testimonials{
 	font-style: italic
+}
+
+
+/*Slider
+==================================================*/
+div.flexslider img{
+	float: right;
+	width: 40% !important;
+	height: auto !important;
+	padding-top: 2%;
 }
