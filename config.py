@@ -21,11 +21,20 @@ if os.environ.get('DATABASE_URL') is None:
 else:
     SQLALCHEMY_DATABASE_URI = os.environ['DATABASE_URL']
 
-# Stores migrate data files
-SQLALCHEMY_MIGRATE_REPO = os.path.join(basedir, 'db_repository')
 
 # Use get_debug_queries function
 SQLALCHEMY_RECORD_QUERIES = True
 
 # Threashold for slow loading (in seconds)
 DATABASE_QUERY_TIMEOUT = 0.5
+
+# email server
+MAIL_SERVER = 'smtp.gmail.com'
+MAIL_PORT = 465
+MAIL_USE_TLS = False
+MAIL_USE_SSL = True
+MAIL_USERNAME = os.environ.get('email')
+MAIL_PASSWORD = os.environ.get('email_pwd')
+
+# administrator list
+ADMINS = [os.environ.get('email')]
