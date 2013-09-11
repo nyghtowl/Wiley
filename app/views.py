@@ -42,7 +42,7 @@ def send_msg():
 
     if user_name:
         send_email(user_name, user_name, message)
-        flash('Your message has been sent.', category='success')
+        flash('Thanks for contacting us. We will follow-up soon.', category='success')
     return redirect(url_for('contact'))
 
 # Support Docs & Test
