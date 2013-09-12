@@ -186,7 +186,7 @@ jQuery(document).ready(function()
 /*	Tabs
 /*----------------------------------------------------*/
 
-	(function() {
+	window.setUpServicesPage = function () {
 
 		var $tabsNav    = $('.tabs-nav'),
 			$tabsNavLis = $tabsNav.children('li'),
@@ -201,19 +201,40 @@ jQuery(document).ready(function()
 			$this.children('li').first().addClass('active').stop(true,true).show();
 		});
 
-		$tabsNavLis.on('click', function(e) {
-			var $this = $(this);
-
-			$this.siblings().removeClass('active').end()
-				 .addClass('active');
-			
-			$this.parent().next().children('.tab-content').stop(true,true).hide()
-														  .siblings( $this.find('a').attr('href') ).fadeIn();
-
-			e.preventDefault();
+		var tabs = [];
+		$tabsNavLis.each(function (index, element) {
+			var $element = $(element);
+			var activateTab = function (e) {
+				$element.siblings().removeClass('active').end().addClass('active');
+				$element.parent().next().children('.tab-content').stop(true,true)
+					.hide().siblings( $element.find('a').attr('href') ).fadeIn();
+				if (e) e.preventDefault();
+			};
+			tabs.push({
+				activate: activateTab
+			});
+			$element.on('click', activateTab);
 		});
 
-	})();
+		var handleHashChange = function () {
+			var hash = window.location.hash.substr(1);
+			switch (hash) {
+				case 'business':
+					tabs[1].activate();
+					break;
+				case 'coaching':
+					tabs[2].activate();
+					break;
+				default:
+					tabs[0].activate();
+					break;
+			}
+		};
+
+		handleHashChange();
+		$(window).on('hashchange', handleHashChange);
+
+	};
 	
 	
 /*----------------------------------------------------*/
