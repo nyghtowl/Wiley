@@ -219,7 +219,7 @@ jQuery(document).ready(function()
 		var handleHashChange = function () {
 			var hash = window.location.hash.substr(1);
 			switch (hash) {
-				case 'business':
+				case 'data':
 					tabs[1].activate();
 					break;
 				case 'coaching':
