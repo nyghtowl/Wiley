@@ -46,32 +46,8 @@ def send_msg():
     return redirect(url_for('contact'))
 
 # Support Docs & Test
-@app.route('/services2')
-def services2():
-    return render_template('services2.html')
-
-@app.route('/blog')
-def blog():
-    return render_template('blog.html')
-
-@app.route('/blog_post')
-def blog_post():
-    return render_template('blog_post.html')
-
 
 @app.route('/shortcodes')
 def shortcodes():
     return render_template('shortcodes.html')
-
-@app.route('/sidebar_left')
-def sidebar_left():
-    return render_template('sidebar_left.html')
-
-@app.route('/sidebar_right')
-def sidebar_right():
-    return render_template('sidebar_right.html')
-
-@app.route('/single_project')
-def single_project():
-    return render_template('single_project.html')
 
