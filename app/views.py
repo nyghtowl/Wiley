@@ -45,9 +45,4 @@ def send_msg():
         flash('Thanks for contacting us. We will follow-up soon.', category='success')
     return redirect(url_for('contact'))
 
-# Support Docs & Test
-
-@app.route('/shortcodes')
-def shortcodes():
-    return render_template('shortcodes.html')
 
