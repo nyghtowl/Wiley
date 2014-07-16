@@ -78,16 +78,8 @@
 						<ul>
 							<li><a href="{{ url_for('services')}}#data" id="software_nav">Data Science</a></li>
 							<li><a href="{{ url_for('services')}}#web" id="software_nav">Websites & Apps</a></li>
-							<li><a href="{{ url_for('services')}}#coaching" id="software_nav">Project Strategy</a></li>
 						</ul>
 					</li>					
-					<li><a href="{{ url_for('portfolio') }}">Portfolio</a>
-						<ul>
-							<li><a href="{{ url_for('portfolio') }}" >Portfolio</a></li>
-							<li><a href="http://github.com/nyghtowl" target="_blank">Github</a></li>
-						</ul>
-					</li>
-					<li><a href="{{ url_for('contact') }}">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -141,10 +133,6 @@
 
 		<!-- Contact -->
 		<div class="four columns">
-			<a href="{{url_for('contact')}}"><h5 id="contact_info">Contact Us</h5></a>
-			<ul class="contact-details">
-				{% include 'contact_partial.html' %}
-			</ul>
 		</div>
 
 		
